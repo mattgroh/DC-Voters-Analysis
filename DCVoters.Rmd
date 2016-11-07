@@ -37,7 +37,7 @@ dc.map = get_map(location = loc, zoom = 11, color = "bw", maptype="watercolor")
 ggmap(dc.map, extent = "normal", maprange=FALSE)  + geom_point(data=data3,aes(y=lat3,x=lon3, color=Proportion), size=.01) +
   xlab("Longitude") +
   ylab("Latitude") +
-  ggtitle("DC Voters") +
+  ggtitle("Democrat Voters") +
   scale_colour_gradient(low="red",high="blue") +
   theme(plot.title =element_text(size=18), text=element_text(size=12),
         panel.background = element_rect(fill = 'white', colour = 'white'),
@@ -62,7 +62,7 @@ ggmap(dc.map, extent = "normal", maprange=FALSE)  + geom_point(data=data3,aes(y=
   xlab("Longitude") +
   ylab("Latitude") +
   ggtitle("Party-Less Voters") +
-  scale_colour_gradient(low="purple",high="yellow") +
+  scale_colour_gradient(low="green",high="black") +
   theme(plot.title =element_text(size=18), text=element_text(size=12),
         panel.background = element_rect(fill = 'white', colour = 'white'),
         legend.text=element_text(size=12),
